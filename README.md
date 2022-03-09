@@ -1,4 +1,4 @@
-# CPP_Projects
+# Portfolio
 ## Numerical Integration
 This code aims to use numerical integration (specifically the fourth-order Runge Kutta scheme) and the shooting method to find the solution to a second order differential equation. This demonstrates the power of approximation methods, given that the differential equation in question has no analytic solution.
 
@@ -19,4 +19,6 @@ The fractional magnetisation is defined as (insert picture of equation)
 
 where f(σ) is the fraction of sites containing the most commonly occuring spin in the configuration. In this script we use a Markov Chain method based on the Metropolis algorithm to generate importance-sampling Monte Carlo random configurations of the Potts spin field on a 20 × 20 grid. For a given value of inverse temperature β and q, we can produce a graph which allows us to estimate the average magnetisation <M>.(insert graph)
 
-
+ ## Wavefunction in a Box
+ 
+ This was a college assignment in which we aimed to model the behaviour of a 1-dimensional quantum mechanical wavefunction in a box of length L, with periodic boundary conditions. The motion of the wavefunction is governed by the Schrodinger equation and the python package cmath is used to produce the necessary complex numbers. We see from the plots of the probability density of the wavefunction, that it not only moves in the positive x-direction with a certain velocity, but also spreads out over time. 
