@@ -1,4 +1,4 @@
-# Portfolio
+# Physical Simulations
 ## Numerical Integration
 This code aims to use numerical integration (specifically the fourth-order Runge Kutta scheme) and the shooting method to find the solution to a second order differential equation. This demonstrates the power of approximation methods, given that the differential equation in question has no analytic solution.
 
