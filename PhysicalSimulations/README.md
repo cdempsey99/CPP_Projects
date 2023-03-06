@@ -12,29 +12,28 @@ The algorithm used here is known as the Leap-frog scheme and it is very useful i
 ## Laplace Equation
 This is a look at partial differential equations, dealing with the very famous second-order PDE, the Laplace Equation. This equation can be seen in everything from electrostatics to the spreading out of heat over time. 
 
-![Laplace_Eqn_img](https://user-images.githubusercontent.com/87008016/223086430-42b91a7a-fa72-4f3d-b7e7-e0b7eb8d3454.png)
+<p align="center"><img width="100" alt="Laplace_Eqn_img" src="https://user-images.githubusercontent.com/87008016/223087724-9359976c-0d4f-440c-864b-22aaf626ced3.png"></p>
 
 We will attempt to find the values of a field Ф on a 2D grid, given that we know (i) that the field obeys the Laplace equation and (ii) the boundary conditions. In this example we consider Dirichlet boundary conditions (the field becomes zero at the grid edges). We essentially turn the problem of a differential equation into one of linear algebra and apply the Successive Over-Relaxed (SOR) Method.
 
 Below we see the resulting heat map, which displays the value of the function Ф on our grid, as found by the SOR method.
 
-<img width="431" alt="HeatmapSnip" src="https://user-images.githubusercontent.com/87008016/223085105-5aa38230-d4c5-4b03-9086-d1d49fa97705.PNG">
+<p align="center"><img width="431" alt="HeatmapSnip" src="https://user-images.githubusercontent.com/87008016/223085105-5aa38230-d4c5-4b03-9086-d1d49fa97705.PNG"></p>
 
 ## Potts Model
 The q-state Potts Model is characterised by an LxL grid of points, each with some integer spin associated with them. These integers can be less than or equal to q (Hence the Ising model is the special case of q=2). This model is a very useful approximation of the thermodynamics of magnetic spins of a 2D crystal lattice. 
 
 The fractional magnetisation is defined as 
 
-<img width="164" alt="Fractional_Magnetisation_formula" src="https://user-images.githubusercontent.com/87008016/223083987-6a6a5eaa-d76b-4659-aff0-5419098285fb.PNG">
+<p align="center"><img width="164" alt="Fractional_Magnetisation_formula" src="https://user-images.githubusercontent.com/87008016/223083987-6a6a5eaa-d76b-4659-aff0-5419098285fb.PNG"></p>
 
 where f(σ) is the fraction of sites containing the most commonly occuring spin in the configuration. In this script we use a Markov Chain method based on the Metropolis algorithm to generate importance-sampling Monte Carlo random configurations of the Potts spin field on a 20 × 20 grid. For a given value of inverse temperature β and q, we can produce a graph which allows us to estimate the average magnetisation.
 
-![BetaVM_q=3](https://user-images.githubusercontent.com/87008016/223084223-3aa87cad-e915-40f4-89db-030113edb5f1.png)
+<p align="center"><img alt="BetaVM_q=3" src="https://user-images.githubusercontent.com/87008016/223084223-3aa87cad-e915-40f4-89db-030113edb5f1.png"></p>
 
  ## Wavefunction in a Box
  
 Here we aimed to model the behaviour of a 1-dimensional quantum mechanical wavefunction in a box of length L, with periodic boundary conditions. The motion of the wavefunction is governed by the Schrodinger equation and the Python package cmath is used to produce the necessary complex numbers. We see from the plots of the probability density of the wavefunction, that it not only moves in the positive x-direction with a certain velocity, but also spreads out over time. 
-![Wavefunction_in_a_Box_Plot](https://user-images.githubusercontent.com/87008016/223084626-81521186-f210-4a21-97b4-148dbc1e5133.png)
-
+<p align="center"><img alt="Wavefunction_in_a_Box_Plot" src="https://user-images.githubusercontent.com/87008016/223084626-81521186-f210-4a21-97b4-148dbc1e5133.png"></p>
  
  
