@@ -9,7 +9,7 @@ This is the perfect tool for the fast-paced environment of the financial markets
 various multinational banks as clients. 
 
 ### Projects
-In this repository you can see some side projects I've interesting, including physical simulation assignments from my degree and some Advent of Code challenges. 
+In this repository you can see some side projects I've found interesting, including physical simulation assignments from my degree and some Advent of Code challenges. 
 
 ### Contact
 If you have any questions feel free to contact me! You can reach me at dempsec5@tcd.ie or through my [LinkedIn](www.linkedin.com/in/callum-dempsey).
